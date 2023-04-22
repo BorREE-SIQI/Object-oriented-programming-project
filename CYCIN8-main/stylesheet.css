@@ -1,0 +1,79 @@
+.centre{
+    text-align: center;
+}
+
+.all-gap{
+    margin-top: 3cm;
+
+}
+
+.sub-gap{
+    margin-top: 1.5cm;
+
+}
+
+.title-font{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 13vh;
+}
+
+.input{
+    font-size: 0.5cm;
+    border-color: black;
+    border-radius: 10px;
+    color: grey;
+    width: 8cm;
+    height: 1cm;
+}
+
+.sub{
+    font-size: 0.7cm;
+    font-weight: bold;
+}
+
+.button-login{
+    background-color: black;
+    color : white;
+    border: black solid 1px;
+
+    width: 4cm;
+    height: 1cm;
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+}
+
+.button-createAccount{
+    background-color: white;
+    color : #000000;
+    border: #FFFFFF;
+    font-size: 2vh;
+    margin-top: 0.5cm;
+    margin-bottom: 0.5cm;
+
+}
+
+.g-signin2{
+    width: 100%;
+  }
+
+  .g-signin2 > div{
+    margin: 0 auto;
+  }
+
+  .btn{
+    cursor: pointer;
+}
+
+.button
+{
+    background-color: black;
+    color : #FFFFFF;
+
+    margin-top: 2cm;
+    width:7cm;
+    height: 4cm;
+    font-size: 0.5cm;
+    font-family: 'Inter', sans-serif;
+}

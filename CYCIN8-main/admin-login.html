@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+<meta charset = "UTF-8">
+<!-- stylesheets and js -->
+<link rel = "stylesheet" href="./stylesheet.css">
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+<script src="javascripts/client.js" defer></script>
+<!-- google icons and fonts -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/d16385a085.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+<!-- google log in -->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<meta name="google-signin-client_id" content="1006345318538-06u5fqd3sur2bthaea307jtjalc33f3r.apps.googleusercontent.com">
+<meta name="google-signin-plugin_name" content="APP">
+
+
+
+
+<title>Login</title>
+</head>
+<body>
+    <div class = "all-gap">
+    <div class = "centre title-font">ADMIN LOGIN</div>
+    <br>
+    <div class = "centre sub-gap sub">
+    <input type = "email" id = "email" class="input" value = "EMAIL"></div>
+    <div class = "centre sub-gap sub">
+    <input type = "password" id = "password"  class="input" value = "PASSWORD"></div>
+    <div class = "centre sub-gap"><button class = "centre sub-gap button-login btn " onclick = "login()">LOGIN</button> </div>
+    <br>
+    <div class = "centre less-gap"><button class = "btn button-createAccount" onclick = "location.href = './createAccount.html'">CREATE ADMIN ACCOUNT</button></div>
+
+    <div class="g-signin2 centre" data-onsuccess="onSignIn" ></div>
+
+
+    </div>
+
+</body>
+</html>

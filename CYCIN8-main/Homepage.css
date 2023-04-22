@@ -1,0 +1,129 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.menu_list {
+    background-color: black;
+    /* border-radius: 15px; */
+}
+
+.menu_icon {
+    display: inline-block;
+    padding: 0px;
+    margin: 20px;
+    margin-left: 190px;
+    color:#fff;
+}
+
+.menu_info {
+    font-size: 0;
+}
+
+.menu_icon:hover .menu_info {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+
+/* Background */
+.image {
+    background-size: cover;
+    height: 100vh;
+}
+
+.heading {
+    font-size: 30px;
+    transform: translateX(750px) translateY(-100px);
+    color: #2776B6;
+}
+
+.text {
+    font-size: 30px;
+    transform: translateX(750px) translateY(-65px);
+    color: #2776B6;
+}
+
+
+/* Introduction Card */
+
+.Intro_cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-color: black; */
+    background-color: rgb(210, 210, 220);
+}
+
+
+.shell {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    perspective: 900px;
+    transform-style: preserve-3d;
+    min-width: 1000px;
+}
+
+
+.shell .box {
+    position: relative;
+    width: 250px;
+    height: 325px;
+    border:#fff 5px solid;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 15px;
+    transform: rotateY(0);
+    transition-delay: .1s;
+    transition: .3s;
+}
+
+.image_card img {
+    height: 1000%;
+    width: 1000%;
+}
+
+.shell:hover .box {
+    transform: rotateY(20deg);
+}
+
+.shell .box:hover {
+    transform: rotateY(0) scale(1.25);
+    box-shadow: 0 25px 40px rgba(0,0,0,0.7);
+    z-index: 1;
+}
+
+.shell .box:hover~.box {
+    transform: rotateY(-20deg);
+}
+
+.shell .box .content {
+    top: 0;
+    position: absolute;
+    padding-left: 15px;
+}
+
+.shell .box .content h1 {
+    transition: .3s;
+    font-size: 30px;
+    transform: translateY(15px);
+}
+
+.shell .box:hover .comtent h1 {
+    transform: translateY(-15px);
+}
+
+.shell .box .content p {
+    /* transform: .3s; */
+    font-size: 18px;
+    transform: translateY(600px);
+}
+
+.shell .box:hover .content p {
+    transform: translateY(50px);
+}
